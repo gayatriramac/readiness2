@@ -32,7 +32,7 @@ build1:
 test1:
   stage: test
   rules:
-    - if $CI_COMMIT_BRANCH == main
+    - if: $CI_COMMIT_BRANCH == "main"
   script:
     - echo "Do a test here"
     - echo "For example run a test suite"

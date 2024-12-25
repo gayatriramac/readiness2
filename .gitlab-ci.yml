@@ -13,7 +13,7 @@
 image: busybox:latest
 
 workflow:
-    name: 'Pipeline for branch: $CI_COMMIT_BRANCH'
+    name: 'Pipeline for branch: feature branch'
     
 before_script:
   - echo "Before script section"
@@ -40,6 +40,11 @@ test2:
   script:
     - echo "Do another parallel test here"
     - echo "For example run a lint test"
+
+test3:
+  stage: test
+  script:
+    - cat readme.md
 
 deploy1:
   stage: deploy

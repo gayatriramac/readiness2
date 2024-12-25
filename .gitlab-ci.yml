@@ -44,7 +44,7 @@ test2:
 test3:
   stage: test
   script:
-    - cat readme.md
+    - cat README.md
 
 deploy1:
   stage: deploy
